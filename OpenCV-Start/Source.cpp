@@ -52,7 +52,7 @@ int main(int argc, char argv[]) {
 	cv::merge(HSV, newHSV);
 	cv::imshow("newhsv", newHSV);
 
-	//cv::imwrite("E:/Test_data/out.jpg", Src_img);
+	//cv::imwrite("E:/Test_data/out.jpg", Src_img);//write will compress
 	double alltime = ((double)cv::getTickCount() - time_count) / cv::getTickFrequency();
 	std::cout << "ÏûºÄÊ±¼ä£º" << alltime << std::endl;
 	cv::waitKey(0);
